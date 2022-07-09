@@ -1,0 +1,20 @@
+<% if current_user %>
+  <link class="nav-link active fw-light"><%= current_user.name %> </li>
+  <li class="nav-item">
+   <%= link_to "Editar my cuenta", edit_user_registration_path, class:"nav-link active fw-light"%>
+  </li>
+  <li class="nav-item">
+    <%= link_to "Log out", new_user_session_path, class:"nav-link active fw-light" %>
+  </li>
+ <li class="nav-item">
+       <%= link_to "Login", user_session_path, class:"nav-link active fw-light" %>
+    </li>
+
+  
+<% else %>
+    
+    <li class="nav-item">
+       <%= link_to "Login", new_user_session_path, class:"nav-link active fw-light" %>
+    </li>
+
+<% end %>

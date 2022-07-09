@@ -1,0 +1,23 @@
+<div id="<%= dom_id story %>">
+  <div class="container">
+     <table class="table table-light bg-light table-striped">
+         <thead>
+             <tr>
+                 <th>Texto:</th>
+                 <th>Escrito por</th>
+                 <th></th>
+             </tr>
+         </thead>
+         <tbody>   
+             <tr>
+                <th><%= story.body %></th>
+                <th><%= story.user.name %></th>
+                <th><%= link_to "ver", story %></th>
+             </tr>
+         </tbody>
+  </div> 
+
+
+</div>
+
+

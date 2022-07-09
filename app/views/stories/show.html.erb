@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @story %>
+
+<div>
+  <%= link_to "Editar", edit_story_path(@story) %> |
+  <%= link_to "Regresar historias", stories_path %>
+
+  <%= button_to "Destruir", @story, method: :delete %>
+</div>
